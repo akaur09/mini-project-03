@@ -1,0 +1,1 @@
+// create models for travellers, location, and trip
