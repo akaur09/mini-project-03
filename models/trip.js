@@ -15,10 +15,26 @@ Trip.init (
             type: Datatypes.INTEGER
         },
         traveller_id: {
-
+            type: Datatypes.INTEGER,
+            reference: {
+                model: 'traveller',
+                key: 'id',
+            },
         },
         location_id: {
-
-        }
+            type: Datatypes.INTEGER,
+            reference: {
+                model: 'location',
+                key: 'id',
+            },
+        },
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscore: true,
+        modelName: 'trip'
     }
-)
+);
+ module.exports = Trip;
