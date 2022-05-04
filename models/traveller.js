@@ -14,5 +14,15 @@ Travellers.init(
     email:{
         type: Datatypes.STRING
     }
- }   
-)
+ },   
+ {
+     sequelize,
+     timestamps: false,
+     freezeTableName: true,
+     underscore: true,
+     modelName: 'Traveller'
+
+ }
+);
+
+module.exports = Travellers;

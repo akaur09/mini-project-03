@@ -11,5 +11,14 @@ Location.init (
         name:{
             type: Datatypes.STRING
         }
+    },
+    {
+        sequelize,
+        timestamps: true,
+        freezeTableName: true,
+        underscore: true,
+        modelName: 'Location'
     }
-)
+);
+
+module.exports = Location;
